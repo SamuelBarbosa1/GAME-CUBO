@@ -10,7 +10,7 @@ var segundo = dataAtual.getSeconds();
 var horaFormatada = hora + ':' + (minuto < 10 ? '0' : '') + minuto + ':' + (segundo < 10 ? '0' : '') + segundo;
 
 // Exibe uma mensagem de boas-vindas com a hora atual
-// alert("Bem-vindo ao CuboNinja! Você entrou às " + horaFormatada);
+alert("Bem-vindo ao CuboNinja! Você entrou às " + horaFormatada);
 
 function atualizarRelogio() {
     var dataAtual = new Date();
