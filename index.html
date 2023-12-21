@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/icons8-ninja-64.png" type="image/x-icon">
+    <title>NinjaCubo</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <canvas id="c"></canvas>
+
+    <div class="hud">
+        <div class="hud__score">
+            <div class="score-lbl"></div>
+            <div class="cube-count-lbl"></div>
+        </div>
+        <div class="pause-btn">
+            <div></div>
+        </div>
+        <div class="slowmo">
+            <div class="slowmo__bar"></div>
+        </div>
+    </div>
+
+    <!-- Menu -->
+    <div class="menus">
+        <div class="menu menu--main">
+            <h1>Cubo Ninja</h1>
+            <button type="button" class="play-normal-btn">JOGAR</button>
+            <button type="button" class="play-casual-btn">MODO LIVRE</button>
+            <div class="credits">
+                Feito por SamuelBarbosa1<br/>
+                Baseado na criação do <a href="https://github.com/SamuelBarbosa1">SamuelBarbosa1</a></div>
+        </div>
+        <div class="menu menu--pause">
+            <h1>Pausado</h1>
+            <button type="button" class="resume-btn">VOLTAR AO JOGO</button>
+            <button type="button" class="menu-btn--pause">MENU</button>
+        </div>
+        <div class="menu menu--score">
+            <h1>Você perdeu !</h1>
+            <h2>Seus pontos:</h2>
+            <div class="final-score-lbl"></div>
+            <div class="high-score-lbl"></div>
+            <button type="button" class="play-again-btn">JOGAR NOVAMENTE</button>
+            <button type="button" class="menu-btn--score">MENU</button>
+        </div>
+        <div id="relogio"></div>
+    </div>
+    <script src="/script.js"></script>
+    <script src="/game.ts.js"></script>
+</body>
+</html>
+
